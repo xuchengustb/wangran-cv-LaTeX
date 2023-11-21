@@ -1,0 +1,64 @@
+
+\documentclass{xucheng-cv}
+
+% Switches
+\swedishfalse
+%\ifacademic
+\academicfalse
+\picturefalse
+
+\begin{document}
+    % Update date
+    \lastupdated
+    
+    % Name and contact information
+    \input{sections/header}
+    
+    % Summary
+    \input{sections/summary}
+    
+    % Education
+    \input{sections/education}
+    
+    % Employment
+   \input{sections/employment_and_social_activities}
+   
+   % Awards
+   \input{sections/awards}
+
+   % Social Activities
+%	\input{sections/skills}
+
+    % Professional experience
+	\input{sections/researchtopic}
+   
+   % Other activities
+   \input{sections/fundings}
+
+
+%    \newpage
+    
+    % Publications
+    \input{sections/publications}
+    % Teaching
+    \ifacademic
+        \input{sections/teaching}
+    \else
+    \fi
+    % Representation
+    \ifacademic
+        \input{sections/representation}
+    \else
+    \fi
+
+    
+    % References
+%    \vfill
+%    \centering{
+%    	\ifswedish
+%    	    \textit{Referenser finns tillgängliga på begäran.}
+%    	\else
+%            \textit{References available on request.}
+%        \fi
+%    }
+\end{document}
